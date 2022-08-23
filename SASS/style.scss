@@ -35,19 +35,9 @@ body {
     font-weight: 700;
   }
   .question-card {
-    font-weight: 400;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &:active {
-      font-weight: 700;
-      transition: 0.3s;
-    }
-    .arrow-down {
-      &:active {
-        transform: rotate(180deg);
-      }
-    }
   }
 }
 
@@ -55,6 +45,13 @@ body {
 .hidden {
   display: none;
 }
+.selected {
+  font-weight: 700;
+  .arrow-down {
+    transform: rotate(180deg);
+  }
+}
+
 /**********DELETE****************/
 
 .attribution {

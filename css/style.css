@@ -32,22 +32,21 @@ body {
   font-weight: 700;
 }
 .main-card .question-card {
-  font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.main-card .question-card:active {
-  font-weight: 700;
-  transition: 0.3s;
-}
-.main-card .question-card .arrow-down:active {
-  transform: rotate(180deg);
 }
 
 /**********DELETE****************/
 .hidden {
   display: none;
+}
+
+.selected {
+  font-weight: 700;
+}
+.selected .arrow-down {
+  transform: rotate(180deg);
 }
 
 /**********DELETE****************/
