@@ -11,7 +11,51 @@
 body {
   font-size: 12px;
   font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient($soft-violet, $soft-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.main-card {
+  width: 300px;
+  min-height: 400px;
+  background-color: $white;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 1px 13px 37px -14px rgba(0, 0, 0, 0.75);
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+  }
+  .question-card {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:active {
+      font-weight: 700;
+      transition: 0.3s;
+    }
+    .arrow-down {
+      &:active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+/**********DELETE****************/
+.hidden {
+  display: none;
+}
+/**********DELETE****************/
 
 .attribution {
   font-size: 11px;
