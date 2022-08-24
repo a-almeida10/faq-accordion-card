@@ -16,6 +16,20 @@ body {
   justify-content: center;
 }
 
+.header-shadow {
+  position: absolute;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: 30px;
+}
+
+.header-img {
+  position: absolute;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -50px;
+}
+
 .main-card {
   width: 300px;
   min-height: 400px;
@@ -28,6 +42,7 @@ body {
   box-shadow: 1px 13px 37px -14px rgba(0, 0, 0, 0.75);
 }
 .main-card h1 {
+  padding-top: 90px;
   text-align: center;
   font-weight: 700;
 }
@@ -37,7 +52,7 @@ body {
   align-items: center;
 }
 
-/**********DELETE****************/
+/**************************/
 .hidden {
   display: none;
 }
@@ -49,7 +64,7 @@ body {
   transform: rotate(180deg);
 }
 
-/**********DELETE****************/
+/**********ATTRIBUTION****************/
 .attribution {
   font-size: 11px;
   text-align: center;
