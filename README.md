@@ -6,7 +6,7 @@ Essa é uma solução para o desafio ["FAQ accordion card challenge on Frontend 
 
 - [Visão geral](#visão-geral)
 - [O desafio](#desafio)
-- [Screenshot](#screenshot)
+- [Screenshots](#screenshots)
 - [Links](#links)
 - [Ferramentas](#ferramentas)
 
@@ -21,9 +21,11 @@ Os usuários devem ser capazes de:
 - Ver o layout adaptado de acordo com o tamanho da tela de seu dispositivo.
 - Mostrar/Esconder a resposta para uma pergunta ao clicar na pergunta.
 
-### Screenshot
-
+### Screenshots
+Versão Desktop: 
 ![Versão Desktop](./screenshots/desktop-screenshot.png)
+
+Versão Mobile:
 ![Versão Mobile](./screenshots/mobile-screenshot.png)
 
 ### Links
