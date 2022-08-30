@@ -14,39 +14,56 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.header-shadow {
-  position: absolute;
-  width: 200px;
-  margin-left: -100px;
-  margin-top: 30px;
-}
-
-.header-img {
-  position: absolute;
-  width: 200px;
-  margin-left: -100px;
-  margin-top: -50px;
+  margin: 10px;
 }
 
 .main-card {
-  width: 300px;
-  min-height: 400px;
+  width: 800px;
+  height: 450px;
   background-color: white;
   padding: 20px;
   border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   box-shadow: 1px 13px 37px -14px rgba(0, 0, 0, 0.75);
 }
-.main-card h1 {
-  padding-top: 90px;
-  text-align: center;
-  font-weight: 700;
+.main-card header {
+  width: 400px;
+  height: 90%;
+  border: 1px solid transparent;
 }
-.main-card .question-card {
+.main-card header .header-shadow {
+  z-index: 1;
+  width: 600px;
+  margin-left: -200px;
+  margin-top: -100px;
+}
+.main-card header .header-img {
+  position: absolute;
+  z-index: 2;
+  margin-top: -480px;
+  margin-left: -100px;
+}
+.main-card header .box-element {
+  position: absolute;
+  z-index: 3;
+  margin-left: -100px;
+  margin-top: -340px;
+}
+.main-card .faq-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 85%;
+  padding: 20px;
+  justify-content: space-around;
+}
+.main-card .faq-container h1 {
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.main-card .faq-container .question-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,9 +85,124 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 2px;
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(240deg, 5%, 91%);
+  text-decoration: none;
+}
+
+/*********MEDIA****************/
+@media (min-width: 1441px) {
+  .main-card {
+    width: 1000px;
+    height: 600px;
+  }
+  .main-card header .header-shadow {
+    z-index: 1;
+    width: 700px;
+    margin-left: -300px;
+    margin-top: 300px;
+  }
+  .main-card header .header-img {
+    z-index: 2;
+    margin-left: -100px;
+    margin-top: -500px;
+  }
+  .main-card header .box-element {
+    position: absolute;
+    z-index: 3;
+    margin-left: -100px;
+    margin-top: -370px;
+  }
+}
+@media (max-width: 899px) {
+  .main-card {
+    width: 700px;
+  }
+  .main-card header .header-shadow {
+    z-index: 1;
+    width: 500px;
+    margin-left: -200px;
+    margin-top: -30px;
+  }
+  .main-card header .header-img {
+    z-index: 2;
+    margin-left: -400px;
+    margin-top: -10px;
+  }
+  .main-card header .box-element {
+    position: absolute;
+    z-index: 3;
+    margin-left: -400px;
+    margin-top: 120px;
+  }
+}
+@media (max-width: 745px) {
+  .main-card {
+    width: 95%;
+    gap: 0px;
+  }
+  .main-card header {
+    width: 350px;
+  }
+  .main-card header .header-shadow {
+    width: 400px;
+    margin-left: -150px;
+    margin-top: 100px;
+  }
+  .main-card header .header-img {
+    width: 350px;
+    margin-top: 80px;
+    margin-left: -300px;
+  }
+  .main-card header .box-element {
+    width: 150px;
+    margin-left: -300px;
+    margin-top: 170px;
+  }
+  .main-card .faq-container {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .main-card {
+    margin-top: 50px;
+    grid-template-columns: 100%;
+    width: 300px;
+    align-items: center;
+    justify-items: center;
+  }
+  .main-card header .header-shadow {
+    z-index: 1;
+    width: 200px;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  .main-card header .header-img {
+    z-index: 2;
+    width: 200px;
+    margin-top: -80px;
+    margin-left: -200px;
+  }
+  .main-card header .box-element {
+    display: none;
+  }
+  .main-card .faq-container {
+    width: 260px;
+    justify-content: space-between;
+    height: 300px;
+    overflow: scroll;
+  }
+  .main-card .faq-container h1 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .main-card .faq-container .question-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

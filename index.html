@@ -14,78 +14,110 @@
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    <header>
-      <img src="./images/bg-pattern-mobile.svg" class="header-shadow" />
-      <img
-        src="./images/illustration-woman-online-mobile.svg"
-        alt="woman using a computer"
-        class="header-img"
-      />
-    </header>
     <main class="main-card">
-      <h1 class="title">FAQ</h1>
-      <div class="question-card">
-        How many team members can I invite?
+      <header>
+        <picture>
+          <source
+            media="(max-width:600px)"
+            srcset="./images/bg-pattern-mobile.svg"
+          />
+          <source
+            media="(max-width:1440px)"
+            srcset="./images/bg-pattern-desktop.svg"
+          />
+          <img
+            alt="shadow"
+            class="header-shadow"
+            src="images/bg-pattern-mobile.svg"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width:600px)"
+            srcset="./images/illustration-woman-online-mobile.svg"
+          />
+          <source
+            media="(min-width:601px)"
+            srcset="./images/illustration-woman-online-desktop.svg"
+          />
+          <img
+            alt="woman in front of a desktop"
+            class="header-img"
+            src="images/illustration-woman-online-mobile.svg"
+          />
+        </picture>
         <img
-          class="arrow-down"
-          src="./images/icon-arrow-down.svg"
-          alt="arrow down"
+          src="./images/illustration-box-desktop.svg"
+          alt="box"
+          class="box-element"
+          id="box-element"
         />
-      </div>
-      <div class="answer-card hidden">
-        You can invite up to 2 additional users on the Free plan. There is no
-        limit on team members for the Premium plan.
-      </div>
-      <hr />
-      <div class="question-card">
-        What is the maximum file upload size?<img
-          class="arrow-down"
-          src="./images/icon-arrow-down.svg"
-          alt="arrow down"
-        />
-      </div>
-      <div class="answer-card hidden">
-        No more than 2GB. All files in your account must fit your allotted
-        storage space.
-      </div>
-      <hr />
+      </header>
+      <div class="faq-container">
+        <h1 class="title">FAQ</h1>
+        <div class="question-card">
+          How many team members can I invite?
+          <img
+            class="arrow-down"
+            src="./images/icon-arrow-down.svg"
+            alt="arrow down"
+          />
+        </div>
+        <div class="answer-card hidden">
+          You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.
+        </div>
+        <hr />
+        <div class="question-card">
+          What is the maximum file upload size?<img
+            class="arrow-down"
+            src="./images/icon-arrow-down.svg"
+            alt="arrow down"
+          />
+        </div>
+        <div class="answer-card hidden">
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+        </div>
+        <hr />
 
-      <div class="question-card">
-        How do I reset my password?<img
-          class="arrow-down"
-          src="./images/icon-arrow-down.svg"
-          alt="arrow down"
-        />
+        <div class="question-card">
+          How do I reset my password?<img
+            class="arrow-down"
+            src="./images/icon-arrow-down.svg"
+            alt="arrow down"
+          />
+        </div>
+        <div class="answer-card hidden">
+          Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.
+        </div>
+        <hr />
+        <div class="question-card">
+          Can I cancel my subscription?<img
+            class="arrow-down"
+            src="./images/icon-arrow-down.svg"
+            alt="arrow down"
+          />
+        </div>
+        <div class="asnwer-card hidden">
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+        </div>
+        <hr />
+        <div class="question-card">
+          Do you provide additional support?<img
+            class="arrow-down"
+            src="./images/icon-arrow-down.svg"
+            alt="arrow down"
+          />
+        </div>
+        <div class="answer-card hidden">
+          Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.
+        </div>
+        <hr />
       </div>
-      <div class="answer-card hidden">
-        Click “Forgot password” from the login page or “Change password” from
-        your profile page. A reset link will be emailed to you.
-      </div>
-      <hr />
-      <div class="question-card">
-        Can I cancel my subscription?<img
-          class="arrow-down"
-          src="./images/icon-arrow-down.svg"
-          alt="arrow down"
-        />
-      </div>
-      <div class="asnwer-card hidden">
-        Yes! Send us a message and we’ll process your request no questions
-        asked.
-      </div>
-      <hr />
-      <div class="question-card">
-        Do you provide additional support?<img
-          class="arrow-down"
-          src="./images/icon-arrow-down.svg"
-          alt="arrow down"
-        />
-      </div>
-      <div class="answer-card hidden">
-        Chat and email support is available 24/7. Phone lines are open during
-        normal business hours.
-      </div>
-      <hr />
     </main>
 
     <footer class="attribution">
